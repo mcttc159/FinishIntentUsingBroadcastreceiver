@@ -35,7 +35,7 @@ public class FirstActivity extends AppCompatActivity {
                 IntentFilter filter=new IntentFilter(ACTION_CLOSE);
                 firstReceiver=new FirstReceiver();
                 registerReceiver(firstReceiver,filter);
-                Intent close=new Intent(FirstActivity.this,CloseActivity.class);
+                Intent close=new Intent(FirstActivity.this,SecondActivity.class);
                 startActivity(close);
 
 
